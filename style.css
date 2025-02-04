@@ -1,6 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 :root{
   font-family: "Alice", serif;
-  line-height: 150%;
   color: #573A37;
 }
 
@@ -27,6 +31,18 @@ img{
   width: 800px;
 }
 
+main{
+  padding: 24px;
+}
+
+section + section{
+  margin-top: 24px;
+}
+
+#about p + p{   
+  margin-top: 12px; /*essa parte do código pega um "P" que tem um "P" anterior a ele, e coloca uma margem nesse "P"*/
+}
+
 h1{
   line-height: 140%;
   font-size: 40px;
@@ -38,4 +54,10 @@ h2{
 
 h1, h2{
   color: #291B1A;
+  margin-bottom: 4px;
+  line-height: 150%;
+}
+
+ul{
+  padding-left: 24px;
 }
